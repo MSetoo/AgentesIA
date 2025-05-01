@@ -1,1 +1,1 @@
-http://39681561D20P3.mshome.net:7778/acc
+http://39681561D20P3:7778/acc

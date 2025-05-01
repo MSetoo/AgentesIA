@@ -12,7 +12,7 @@ public class Agente1 extends Agent{
 
         @Override
         public void action() {
-            Cliente cliente1= new Cliente(1,1,1,1,1,1);        
+            Cliente cliente1= new Cliente(1,1,1, 1,1,1);        
            // Mensaje.enviarMensaje(getAgent(), "Agente2", "Hola", ACLMessage.REQUEST , "AG1-AG2");aqui mando un string 
             Mensaje.enviarMensajeObj(getAgent(), "Agente2", cliente1, ACLMessage.REQUEST , "AG1-AG2"); // aqui mando  un objeto
             ACLMessage acl = blockingReceive();

@@ -16,8 +16,8 @@ public class Contenedor {
 
     public void agregarAgentes(AgentContainer agentContainer){
         try {
-            agentContainer.createNewAgent("Agente2", Agente2.class.getName(), null).start();;
-            agentContainer.createNewAgent("Agente1", Agente1.class.getName(), null).start();;
+            agentContainer.createNewAgent("Agente2", Agente2.class.getName(), new Object[]{agentContainer,0}).start();;
+            agentContainer.createNewAgent("Agente1", Agente1.class.getName(), null).start();
         } catch (Exception e) {
             e.printStackTrace();
         }

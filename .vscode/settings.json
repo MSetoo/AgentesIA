@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "AI_AG/Comunicacion/lib/Base64.jar",
+        "AI_AG/Comunicacion/lib/commons-codec-1.3.jar",
+        "AI_AG/Comunicacion/lib/jade.jar"
+    ]
+}

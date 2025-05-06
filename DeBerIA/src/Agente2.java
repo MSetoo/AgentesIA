@@ -11,7 +11,12 @@ public class Agente2 extends Agent{
         private boolean done = false; 
         @Override
         public void action() {
-            //ACLMessage ac2 = blockingReceive();
+            ACLMessage ac1 = blockingReceive();
+            if(ac1 != null) {
+                System.out.println("Mensaje recibido: " + ac1.getContent());
+                System.out.println("De: " + ac1.getSender().getLocalName()); 
+            }
+
             Mensaje.enviarMensaje(this.getAgent(), "Agente5", "Hola Agente 5", ACLMessage.REQUEST, "AG2-AG5"); 
             Mensaje.enviarMensaje(this.getAgent(), "Agente4", "Hola Agente 4", ACLMessage.REQUEST, "AG2-AG4"); 
             Mensaje.enviarMensaje(this.getAgent(), "Agente3", "Hola Agente 3", ACLMessage.REQUEST, "AG2-AG3"); 

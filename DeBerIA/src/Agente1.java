@@ -10,15 +10,17 @@ import jade.lang.acl.ACLMessage;
             private boolean done = false; 
             @Override
             public void action() {
-                ACLMessage ac5h = blockingReceive();
+                Mensaje.enviarMensaje (this.getAgent(), "Agente2", "Hola Agente 2", ACLMessage.REQUEST, "AG1-AG2");
+                ACLMessage ac5h = blockingReceive(5000);
                 System.out.println("Mensaje recibido: " + ac5h.getContent());
                 System.out.println("De: " + ac5h.getSender().getLocalName()); 
                 ACLMessage respuesta = ac5h.createReply();
                 respuesta.setContent("Hola, soy el Agente1. Mensaje recibido.");
                 respuesta.setPerformative(ACLMessage.INFORM);
                 send(respuesta);               
-                done = true;
-                doDelete();
+                //done = true;
+                //doDelete();
+                
             }
     
             @Override

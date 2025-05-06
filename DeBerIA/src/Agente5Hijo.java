@@ -39,6 +39,7 @@ public class Agente5Hijo extends Agent {
             AgentContainer agenteContenedor =(AgentContainer)getArguments()[0];
             int i  =(int)getArguments()[1];
             i= i+1;
+            System.out.println(i);
             try {
                 agenteContenedor.createNewAgent("Agente5Hijo"+i, Agente5Hijo.class.getName(), 
                 new Object[]{agenteContenedor,i}).start();

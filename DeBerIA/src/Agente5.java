@@ -45,8 +45,8 @@ public class Agente5 extends Agent {
         int i  =(int)getArguments()[1];
         i= i+1;
         try {
-            agenteContenedor.createNewAgent("AgenteH"+i, Agente5Hijo.class.getName(), 
-            new Object[]{agenteContenedor,i}).start();
+            agenteContenedor.createNewAgent("AgenteHijo5", Agente5Hijo.class.getName(), 
+            new Object[]{agenteContenedor,0}).start();
         } catch (StaleProxyException e) {
             e.printStackTrace();
         }

@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "Comunicacion\\src"
+    ],
+    "java.project.referencedLibraries": [
+        "Comunicacion\\lib\\Base64.jar",
+        "Comunicacion\\lib\\commons-codec-1.3.jar",
+        "Comunicacion\\lib\\jade.jar"
+    ]
+}
